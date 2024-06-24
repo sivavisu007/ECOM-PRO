@@ -3,7 +3,7 @@ from fastapi.security import OAuth2PasswordRequestForm
 from sqlalchemy.orm import Session
 import service.crud as crud
 import schemas
-import depends
+import auth.depends as depends
 import database
 
 database.Base.metadata.create_all(bind=database.engine)
