@@ -1,0 +1,9 @@
+fastapi
+bcrypt
+sqlalchemy
+pydantic
+python-jose
+pyjwt
+passlib
+datetime
+dotenv

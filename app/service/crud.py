@@ -1,7 +1,7 @@
 from sqlalchemy.orm import Session
-import models.models as models
-import schemas
-import depends
+import Models.models as models
+import Schemas.schemas as schemas
+import Auth.depends as depends
 
 def get_users(db: Session):
     return db.query(models.User).all()
