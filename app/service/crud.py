@@ -2,11 +2,16 @@ from sqlalchemy.orm import Session
 import Models.models as models
 import Schemas.schemas as schemas
 import Auth.depends as depends
+import logging
+
+logger = logging.getLogger(__name__)
 
 def get_users(db: Session):
+    logger.info("Fetching all users from the database")
     return db.query(models.User).all()
 
 def get_user_by_username(db: Session, username: str):
+    logger.info(f"Fetching user with username {username} from the database")
     return db.query(models.User).filter(models.User.username == username).first()
 
 def create_user(db: Session, user: schemas.UserCreate):
@@ -15,6 +20,7 @@ def create_user(db: Session, user: schemas.UserCreate):
     db.add(db_user)
     db.commit()
     db.refresh(db_user)
+    logger.info(f"User with username {user.username} created successfully")
     return db_user
 
 def update_user(db: Session, user_id: int, user_update: schemas.UserCreate):
@@ -24,6 +30,7 @@ def update_user(db: Session, user_id: int, user_update: schemas.UserCreate):
         db_user.hashed_password = depends.get_password_hash(user_update.password)
         db.commit()
         db.refresh(db_user)
+        logger.info(f"User with id {user_id} updated successfully")
     return db_user
 
 def delete_user(db: Session, user_id: int):
@@ -31,6 +38,7 @@ def delete_user(db: Session, user_id: int):
     if db_user:
         db.delete(db_user)
         db.commit()
+        logger.info(f"User with id {user_id} deleted successfully")
     return db_user
 
 # Product CRUD operations
