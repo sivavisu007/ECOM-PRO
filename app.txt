@@ -1,0 +1,47 @@
+2024-06-26 15:08:46,440 - config.config - INFO - application startup
+2024-06-26 15:09:12,320 - router.routers - INFO - Login attempt for user:sivahari
+2024-06-26 15:09:12,320 - root - INFO - Authenticating user:sivahari
+2024-06-26 15:09:12,341 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\sivav\python-10d\NEW-ECOM\app\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2024-06-26 15:09:12,704 - root - INFO - Creating access token
+2024-06-26 15:09:12,709 - router.routers - INFO - user sivahari logged in successfully
+2024-06-26 15:10:14,720 - router.routers - INFO - Login attempt for user:sivahari
+2024-06-26 15:10:14,720 - root - INFO - Authenticating user:sivahari
+2024-06-26 15:10:15,021 - root - INFO - Creating access token
+2024-06-26 15:10:15,021 - router.routers - INFO - user sivahari logged in successfully
+2024-06-26 15:10:41,121 - service.crud - INFO - Fetching all users from the database
+2024-06-26 15:10:41,121 - router.routers - INFO - Retrieved all users
+2024-06-26 15:10:55,197 - root - INFO - Getting user:sivahari
+2024-06-26 15:10:55,197 - service.crud - INFO - Fetching user with username sivahari from the database
+2024-06-26 15:10:55,197 - root - INFO - currect user: sivahari
+2024-06-26 15:12:22,547 - config.config - INFO - application shutdown
+2024-06-26 15:21:39,422 - config.config - INFO - application startup
+2024-06-26 15:22:01,200 - router.routers - INFO - Login attempt for user:sivahari
+2024-06-26 15:22:01,200 - root - INFO - Authenticating user:sivahari
+2024-06-26 15:22:01,228 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\sivav\python-10d\NEW-ECOM\app\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2024-06-26 15:22:01,565 - root - INFO - Creating access token
+2024-06-26 15:22:01,565 - router.routers - INFO - user sivahari logged in successfully
+2024-06-26 15:24:05,210 - config.config - INFO - application shutdown
+2024-06-26 15:24:09,555 - config.config - INFO - application startup
+2024-06-26 15:24:28,185 - router.routers - INFO - Login attempt for user:sivahari
+2024-06-26 15:24:28,185 - root - INFO - Authenticating user:sivahari
+2024-06-26 15:24:28,215 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\sivav\python-10d\NEW-ECOM\app\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2024-06-26 15:24:28,615 - root - INFO - Creating access token
+2024-06-26 15:24:28,615 - router.routers - INFO - user sivahari logged in successfully
+2024-06-26 15:24:51,057 - service.crud - INFO - Fetching all users from the database
+2024-06-26 15:24:51,058 - router.routers - INFO - Retrieved all users
+2024-06-26 15:25:07,098 - config.config - INFO - application shutdown
