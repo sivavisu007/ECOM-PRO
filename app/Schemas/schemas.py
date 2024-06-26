@@ -12,7 +12,7 @@ class User(UserBase):
     id: int
 
     class Config:
-        orm_mode = True
+        from_attributes = True
 
 class UserWithToken(BaseModel):
     user: User
@@ -20,7 +20,7 @@ class UserWithToken(BaseModel):
     token_type: str
 
     class Config:
-        orm_mode = True
+        from_attributes = True
 
 # Product Schemas
 class ProductBase(BaseModel):
@@ -36,7 +36,7 @@ class Product(ProductBase):
     id: int
 
     class Config:
-        orm_mode = True
+        from_attributes = True
 
 # CartItem Schemas
 class CartItemBase(BaseModel):
@@ -51,7 +51,7 @@ class CartItem(CartItemBase):
     user_id: int
 
     class Config:
-        orm_mode = True
+        from_attributes = True
 
 # Purchase Schemas
 class PurchaseBase(BaseModel):
@@ -65,7 +65,7 @@ class Purchase(PurchaseBase):
     user_id: int
 
     class Config:
-        orm_mode = True
+        from_attributes = True
 
 # Token Schema
 class Token(BaseModel):
